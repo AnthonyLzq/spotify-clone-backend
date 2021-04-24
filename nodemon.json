@@ -1,0 +1,11 @@
+{
+  "watch": [
+    ".env",
+    "src"
+  ],
+  "ext": "js json",
+  "ignore": [
+    "src/**/*.test.ts"
+  ],
+  "exec": "node -r dotenv/config ./src/index"
+}

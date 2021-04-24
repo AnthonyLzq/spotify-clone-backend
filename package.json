@@ -1,0 +1,27 @@
+{
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "description": "Spotify clone but better",
+  "main": "src/index.js",
+  "scripts": {
+    "service": "nodemon",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "Spotify"
+  ],
+  "author": "AnthonyLzq",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lyrics-finder": "^21.7.0",
+    "morgan": "^1.10.0",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "type": "module"
+}
