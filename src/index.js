@@ -21,7 +21,7 @@ app.get('/', (req, res) => res.status(200).send({
 app.post('/login', async (req, res) => {
   const { body: { code } } = req
   const spotifyApi = new SpotifyWebApi({
-    redirectUri : 'http://localhost:3000',
+    redirectUri : process.env.REDIRECT_ROUTE,
     clientId    : process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET
   })
@@ -46,7 +46,7 @@ app.post('/login', async (req, res) => {
 app.post('/refresh', async (req, res) => {
   const { body: { refreshToken } } = req
   const spotifyApi = new SpotifyWebApi({
-    redirectUri : 'http://localhost:3000',
+    redirectUri : process.env.REDIRECT_ROUTE,
     clientId    : process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     refreshToken
